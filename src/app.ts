@@ -14,6 +14,7 @@ const schema: GraphQLSchema = makeExecutableSchema({
 
 const server = new ApolloServer({
   schema,
+  introspection: true,
   playground: true,
 });
 
